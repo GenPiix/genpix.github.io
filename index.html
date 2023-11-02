@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" class="red" content="0.5; URL=en/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+</head>
+<body>
+    <h1>Redirecting....</h1>
+</body>
+<script>
+    var userLang = navigator.language
+    if (userLang.includes('en')){
+        document.querySelector('.red').setAttribute('content', '0.5; URL=en/')
+
+    }else if (userLang.includes('ar')){
+        document.querySelector('.red').setAttribute('content', '0.5; URL=ar/')
+
+    }else if (userLang.includes('de')){
+        document.querySelector('.red').setAttribute('content', '0.5; URL=de/')
+
+    }else if (userLang.includes('es')){
+        document.querySelector('.red').setAttribute('content', '0.5; URL=es/')
+
+    }else if (userLang.includes('fr')){
+        document.querySelector('.red').setAttribute('content', '0.5; URL=fr/')
+
+    }else if (userLang.includes('hi')){
+        document.querySelector('.red').setAttribute('content', '0.5; URL=hn/')
+
+    }else {
+        document.querySelector('.red').setAttribute('content', '0.5; URL=en/')
+    }
+</script>
+</html>
